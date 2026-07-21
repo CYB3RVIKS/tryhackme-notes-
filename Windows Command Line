@@ -1,0 +1,296 @@
+# Windows Command Line (CMD)
+
+## Overview
+
+Today, I learned the fundamentals of the **Windows Command Line (CMD)** using TryHackMe.
+
+The Windows Command Line (`cmd.exe`) is a command-line interpreter that allows users to interact with the Windows operating system by typing commands instead of using a graphical interface (GUI).
+
+It is commonly used to:
+
+* Display system information
+* Troubleshoot network issues
+* Manage files and directories
+* Monitor network connections
+* Perform administrative tasks
+
+---
+
+# System Information Commands
+
+## `set`
+
+Displays environment variables configured on the system.
+
+### Example
+
+```cmd
+set
+```
+
+---
+
+## `PATH`
+
+Displays the directories Windows searches when executing commands.
+
+### Example
+
+```cmd
+echo %PATH%
+```
+
+---
+
+## `ver`
+
+Displays the installed Windows version.
+
+### Example
+
+```cmd
+ver
+```
+
+---
+
+## `systeminfo`
+
+Displays detailed information about the operating system and computer.
+
+Information includes:
+
+* Windows version
+* Computer name
+* Processor
+* Installed memory (RAM)
+* Boot time
+* Network adapter information
+
+### Example
+
+```cmd
+systeminfo
+```
+
+---
+
+# Network Troubleshooting Commands
+
+## `ipconfig`
+
+Displays the computer's IP configuration.
+
+### Example
+
+```cmd
+ipconfig
+```
+
+---
+
+## `ipconfig /all`
+
+Displays detailed network configuration.
+
+Information includes:
+
+* IPv4 Address
+* IPv6 Address
+* Default Gateway
+* DNS Servers
+* MAC Address
+
+### Example
+
+```cmd
+ipconfig /all
+```
+
+---
+
+## `ping`
+
+Tests whether another device or host is reachable by sending ICMP Echo Request packets.
+
+### Example
+
+```cmd
+ping google.com
+```
+
+Common uses:
+
+* Test internet connectivity
+* Verify communication between two devices
+* Measure response time (latency)
+
+---
+
+## `tracert`
+
+Displays the path that network packets take from your computer to a destination.
+
+Instead of only telling you whether a destination is reachable, it shows each router (hop) the traffic passes through. This helps identify where connection problems occur.
+
+### Example
+
+```cmd
+tracert google.com
+```
+
+---
+
+## `nslookup`
+
+Queries DNS servers to find the IP address associated with a domain name.
+
+### Example
+
+```cmd
+nslookup google.com
+```
+
+---
+
+## `netstat`
+
+Displays current network connections and listening ports.
+
+### Example
+
+```cmd
+netstat
+```
+
+---
+
+# File and Directory Management
+
+The mission debrief emphasized that **effective file discovery and reading are core skills for Windows command-line troubleshooting and forensic investigations.**
+
+---
+
+## `cd`
+
+Changes the current working directory.
+
+### Example
+
+```cmd
+cd Documents
+```
+
+---
+
+## `dir`
+
+Lists files and folders in the current directory.
+
+### Example
+
+```cmd
+dir
+```
+
+---
+
+## `dir /a`
+
+Displays all files, including hidden and system files.
+
+### Example
+
+```cmd
+dir /a
+```
+
+---
+
+## `dir /s`
+
+Lists files in the current directory and all subdirectories.
+
+### Example
+
+```cmd
+dir /s
+```
+
+---
+
+## `mkdir`
+
+Creates a new directory.
+
+### Example
+
+```cmd
+mkdir Projects
+```
+
+---
+
+## `rmdir`
+
+Removes an empty directory.
+
+### Example
+
+```cmd
+rmdir Projects
+```
+
+---
+
+## `type`
+
+Displays the contents of a text file.
+
+### Example
+
+```cmd
+type notes.txt
+```
+
+---
+
+## `move`
+
+Moves a file or folder to another location.
+
+### Example
+
+```cmd
+move report.txt Documents
+```
+
+---
+
+## `copy`
+
+Copies files from one location to another.
+
+### Example
+
+```cmd
+copy notes.txt Backup
+```
+
+---
+
+# Key Takeaways
+
+* The Windows Command Line provides a powerful way to interact with and manage a Windows system.
+* Commands such as `systeminfo`, `ipconfig`, `ping`, and `netstat` are essential for gathering system and network information.
+* `tracert` helps visualize the route packets take to reach a destination, making it useful for troubleshooting network issues.
+* Basic file management commands like `cd`, `dir`, `mkdir`, `copy`, and `move` are fundamental skills for Windows administration and cybersecurity.
+* File discovery and navigation are important skills for digital forensics and incident response.
+
+---
+
+## Room Completed
+
+* **Platform:** TryHackMe
+* **Topic:** Windows Command Line
+* **Status:** ✅ Completed
