@@ -8,11 +8,11 @@ The Windows Command Line (`cmd.exe`) is a command-line interpreter that allows u
 
 It is commonly used to:
 
-* Display system information
-* Troubleshoot network issues
-* Manage files and directories
-* Monitor network connections
-* Perform administrative tasks
+- Display system information
+- Troubleshoot network issues
+- Manage files and directories
+- Monitor network connections
+- Perform administrative tasks
 
 ---
 
@@ -60,12 +60,12 @@ Displays detailed information about the operating system and computer.
 
 Information includes:
 
-* Windows version
-* Computer name
-* Processor
-* Installed memory (RAM)
-* Boot time
-* Network adapter information
+- Windows version
+- Computer name
+- Processor
+- Installed memory (RAM)
+- Boot time
+- Network adapter information
 
 ### Example
 
@@ -95,11 +95,11 @@ Displays detailed network configuration.
 
 Information includes:
 
-* IPv4 Address
-* IPv6 Address
-* Default Gateway
-* DNS Servers
-* MAC Address
+- IPv4 Address
+- IPv6 Address
+- Default Gateway
+- DNS Servers
+- MAC Address
 
 ### Example
 
@@ -119,11 +119,11 @@ Tests whether another device or host is reachable by sending ICMP Echo Request p
 ping google.com
 ```
 
-Common uses:
+**Common uses:**
 
-* Test internet connectivity
-* Verify communication between two devices
-* Measure response time (latency)
+- Test internet connectivity
+- Verify communication between two devices
+- Measure response time (latency)
 
 ---
 
@@ -281,16 +281,16 @@ copy notes.txt Backup
 
 # Key Takeaways
 
-* The Windows Command Line provides a powerful way to interact with and manage a Windows system.
-* Commands such as `systeminfo`, `ipconfig`, `ping`, and `netstat` are essential for gathering system and network information.
-* `tracert` helps visualize the route packets take to reach a destination, making it useful for troubleshooting network issues.
-* Basic file management commands like `cd`, `dir`, `mkdir`, `copy`, and `move` are fundamental skills for Windows administration and cybersecurity.
-* File discovery and navigation are important skills for digital forensics and incident response.
+- The Windows Command Line provides a powerful way to interact with and manage a Windows system.
+- Commands such as `systeminfo`, `ipconfig`, `ping`, and `netstat` are essential for gathering system and network information.
+- `tracert` helps visualize the route packets take to reach a destination, making it useful for troubleshooting network issues.
+- Basic file management commands like `cd`, `dir`, `mkdir`, `copy`, and `move` are fundamental skills for Windows administration and cybersecurity.
+- File discovery and navigation are important skills for digital forensics and incident response.
 
 ---
 
 ## Room Completed
 
-* **Platform:** TryHackMe
-* **Topic:** Windows Command Line
-* **Status:** ✅ Completed
+- **Platform:** TryHackMe
+- **Topic:** Windows Command Line
+- **Status:** ✅ Completed
